@@ -1,5 +1,5 @@
 {
-    "name": "lightweight",
+    "name": "Lightweight",
     "description": "Take more knockback and gain slowness at 25% health.",
     "type": "origins:multiple",
     "slowness": {

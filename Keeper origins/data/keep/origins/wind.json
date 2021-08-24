@@ -1,7 +1,8 @@
 {
 	"powers": [
 		"keep:hyperactive",
-		"keep:light"
+		"keep:light",
+		"keep:wingless"
 	],
 	"icon": "minecraft:feather",
 	"order": 10,
