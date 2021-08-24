@@ -1,0 +1,16 @@
+{
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+        "name": "vulnerable when slowness",
+        "operation": "multiply_total",
+        "value": 2
+    },
+    "condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:slowness",
+        "min_amplifier": 0
+    },
+    "hidden": false,
+    "name": "Hyperactive",
+    "description": "You take double damage when you have slowness."
+}

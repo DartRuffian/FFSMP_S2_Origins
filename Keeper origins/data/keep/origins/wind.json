@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"keep:hyperactive",
+		"keep:light"
+	],
+	"icon": "minecraft:feather",
+	"order": 10,
+	"impact": 0,
+	"name": "Keeper of the wind",
+	"description": "You keep the wind man"
+}

@@ -1,0 +1,32 @@
+{
+    "name": "lightweight",
+    "description": "Take more knockback and gain slowness at 25% health.",
+    "type": "origins:multiple",
+    "slowness": {
+        "type": "active_self",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 20,
+                "amplifier": 1,
+                "show_icon": false
+            }
+        },
+         "tick_rate": 20,
+        "condition": {
+            "type": "origins:relative_health",
+            "comparison": "<=",
+            "compare_to": 0.25
+        },
+        "knockback": {
+            "type": "origins:attribute",
+            "modifier": {
+                "name": "more knockback",
+                "attribute": "minecraft.generic.knockback_resistance",
+                "value": -2,
+                "operation": "multiply_base"
+            }
+        }
+    }
+}
