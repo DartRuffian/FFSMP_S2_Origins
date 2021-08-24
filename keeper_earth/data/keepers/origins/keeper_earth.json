@@ -1,0 +1,8 @@
+{
+    "powers": [
+    ],
+    "icon": "minecraft:barrier",
+    "order": 1,
+    "name": "Keeper of Earth",
+    "description": "keepers:keeper_earth.desc"
+}
