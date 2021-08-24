@@ -2,7 +2,8 @@
 	"powers": [
 		"keep:hyperactive",
 		"keep:light",
-		"keep:wingless"
+		"keep:wingless",
+		"keep:frail"
 	],
 	"icon": "minecraft:feather",
 	"order": 10,
