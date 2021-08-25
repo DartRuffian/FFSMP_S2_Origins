@@ -3,7 +3,8 @@
 		"keep:hyperactive",
 		"keep:light",
 		"keep:wingless",
-		"keep:frail"
+		"keep:frail",
+		"keep:effects"
 	],
 	"icon": "minecraft:feather",
 	"order": 10,

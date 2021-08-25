@@ -1,6 +1,6 @@
 {
     "name": "Lightweight",
-    "description": "Take more knockback and gain slowness at 25% health.",
+    "description": "Immune to knocback resistance and gain slowness at 25% health.",
         "type": "active_self",
         "entity_action": {
             "type": "origins:apply_effect",

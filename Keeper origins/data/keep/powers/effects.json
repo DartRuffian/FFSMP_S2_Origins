@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "speeed":{
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "speed",
+            "attribute": "generic.movement_speed",
+            "value": 0.05,
+            "modifier": "addition"
+        },
+        "jump": {
+            "type":"active_self",
+            "entity_action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:jump_boost",
+                    "duration": 60,
+                    "amplifier": 0,
+                    "show_icon": false
+                }
+            },
+            "tick_rate": 20
+        }
+    }
+}
