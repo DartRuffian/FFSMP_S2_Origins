@@ -1,0 +1,141 @@
+{
+    "name": "Takeoff",
+    "description": "Your race has the ability to triple jump.",
+	"type": "origins:multiple",
+	"hidden": false,
+	"number_of_jumps": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 2,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"jump_reset": {
+		"type":"origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "keep:takeoff/number_of_jumps",
+			"change": 1000
+		},
+		"condition":{
+			"type":"origins:on_block"
+		}
+	},
+	"activating_jump": {
+		"type":"origins:active_self",
+		"key": {
+			"key":"key.jump"
+		},
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"condition": {
+			"type":"origins:and",
+			"conditions":[
+				{
+					"type":"origins:on_block",
+					"inverted": true
+				},
+				{
+					"type": "origins:resource",
+					"resource": "keep:takeoff/number_of_jumps",
+					"comparison": ">",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:lava",
+					"comparison": "==",
+					"compare_to": 0
+
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:add_velocity",
+					"set": true,
+					"y": 0.5
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:moving"
+					},
+					"if_action": {
+						"type": "origins:add_velocity",
+						"space":"local",
+						"z": 0.2
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "keep:takeoff/number_of_jumps",
+					"change": -1
+				}
+			]
+		}
+	},
+	"fall_half_immunity": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"condition": {
+			"type":"origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_distance",
+					"comparison": "<",
+					"compare_to": 6
+				},
+				{
+					"type": "origins:resource",
+					"resource": "keep:takeoff/number_of_jumps",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"fall_half_damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"condition": {
+			"type":"origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_distance",
+					"comparison": ">",
+					"compare_to": 5
+				},
+				{
+					"type": "origins:resource",
+					"resource": "keep:takeoff/number_of_jumps",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		},
+		"modifier": {
+			"name": "jump resist",
+			"operation": "multiply_total",
+			"value": -0.5
+		}
+	}
+}
