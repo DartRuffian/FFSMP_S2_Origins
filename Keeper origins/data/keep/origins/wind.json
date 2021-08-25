@@ -1,9 +1,10 @@
 {
 	"powers": [
-		"keep:hyperactive",
+		"keep:rise",
 		"keep:takeoff",
 		"keep:dusty",
 		"keep:light",
+		"keep:hyperactive",
 		"keep:wingless",
 		"keep:frail",
 		"keep:effects"
