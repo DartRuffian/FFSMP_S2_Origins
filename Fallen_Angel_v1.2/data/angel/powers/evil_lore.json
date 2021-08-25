@@ -1,0 +1,232 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+
+	"evil_lore": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 5,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"hidden": true
+	},
+
+	"evilone": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s {\"text\":\"What are you doing! Your ascension hangs in the balance here, Fallen One. Now you must stay on that wretched planet longer. Please don't make this worse, my child.\",\"bold\":true,\"italic\":true,\"color\":\"dark_green\"}",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -8
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"eviltwo": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s [\"\",{\"text\":\"Fallen One...you're....slipping away...somethi\",\"bold\":true,\"italic\":true,\"color\":\"dark_green\"},{\"text\":\"ng else is interfering....child...\",\"bold\":true,\"italic\":true,\"obfuscated\":true,\"color\":\"dark_green\"},{\"text\":\"hah, that poor fool. he has no idea. angel, you walk the path of darkness. this is good. light runs from the darkness...\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}]",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -16
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 1
+				}
+			]
+		}
+	},
+	"evilthree": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s {\"text\":\"now, since that blundering fool is no longer intruding... angel, what is it you want? what do you think that fool can give you? nothing. i on the other hand, have much to offer....\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -32
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 2
+				}
+			]
+		}
+	},
+	"evilfour": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s {\"text\":\"good....angel, you shall Descend soon. power unending awaits. just a few more killings...\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -48
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 3
+				}
+			]
+		}
+	},
+	"evilfourhalf": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s {\"text\":\"you are so close now. the gardener has no hold on you. you are nearly free.\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -64
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 4
+				}
+			]
+		}
+	},
+	"evilfive": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"rising_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "tellraw @s {\"text\":\"hah! you trusted me. you fool. your power is mine now, and perhaps i can free myself from this hellscape...you see, angel? you cant trust anyone. nobody. whether they call themselves the gardener, or Pendrake. oh, have i not told you my name yet? where are my manners...my name is Pendrake, and angel, i believe you will never be hearing from me again. enjoy being cursed...\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"change": 1
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "angel:morality",
+					"comparison": "<=",
+					"compare_to": -80
+				},
+				{
+					"type": "origins:resource",
+					"resource": "angel:evil_lore_evil_lore",
+					"comparison": "==",
+					"compare_to": 5
+				}
+			]
+		}
+	}
+}

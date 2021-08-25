@@ -1,0 +1,10 @@
+{
+	"type": "origins:modify_damage_taken",
+	"modifier": {
+		"operation": "multiply_base",
+		"value": 1.3
+	},
+
+	"name": "§4§nPreviously Immortal",
+	"description": "You are unaccustomed to this mortal world. Things hurt you, unlike they used to, and so you take more damage."
+}

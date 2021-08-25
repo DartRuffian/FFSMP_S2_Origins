@@ -1,0 +1,128 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+
+	"minuseight": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": 20,
+		"effect": {
+			"effect": "minecraft:bad_omen",
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": true
+		},
+
+		"condition": {
+			"type": "origins:resource",
+			"resource": "angel:morality",
+			"comparison": "<=",
+			"compare_to": -16
+		}
+	},
+	"minussixteen": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": 20,
+		"effect": {
+			"effect": "minecraft:slowness",
+			"amplifier": 0,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+
+		"condition": {
+			"type": "origins:resource",
+			"resource": "angel:morality",
+			"comparison": "<=",
+			"compare_to": -32
+		}
+	},
+	"minustwentyfour": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": 40,
+		"effect": {
+			"effect": "minecraft:hunger",
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "angel:morality",
+			"comparison": "<=",
+			"compare_to": -48
+		}
+	},
+	"minusthirtytwo": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": 100,
+		"effect": {
+			"effect": "minecraft:unluck",
+			"amplifier": 1,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+
+		"condition": {
+			"type": "origins:resource",
+			"resource": "angel:morality",
+			"comparison": "<=",
+			"compare_to": -64
+		}
+	},
+	"minusforty": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": 40,
+		"effects": [
+			{
+				"effect": "minecraft:blindness",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:nausea",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:slowness",
+				"amplifier": 2,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:mining_fatigue",
+				"amplifier": 1,
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			},
+			{
+				"effect": "minecraft:weakness",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false
+			}
+		],
+		"condition": {
+			"type": "origins:resource",
+			"resource": "angel:morality",
+			"comparison": "<=",
+			"compare_to": -80
+		}
+	}
+}

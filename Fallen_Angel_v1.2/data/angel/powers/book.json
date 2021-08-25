@@ -1,0 +1,15 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:execute_command",
+		"command": "give @s written_book{pages:['[\"\",{\"text\":\"Welcome to your trial, my child.\\\\nI wish that I did not have to do this, but your actions have forced my hand.\\\\n\\\\nWhere you are now is a planet I chose to test you.\\\\nAnd it \"},{\"text\":\"will\",\"italic\":true},{\"text\":\" test you.\\\\n \",\"color\":\"reset\"}]','{\"text\":\"Even more so, because you mustn\\'t hurt a single thing. Not one creature.\\\\nNot like you did.\\\\n\\\\nDo this, and I will see you as worthy of Ascension once again.\\\\n \"}','[\"\",{\"text\":\"Fail...and you will not like the consequences.\\\\n\\\\n\\\\n\\\\nGood luck, Fallen One. \\\\nReclaim your place here once again.\\\\nI know you can do it.\\\\n\\\\n\"},{\"text\":\"-\",\"italic\":true},{\"text\":\"Gardener\",\"italic\":true,\"obfuscated\":true}]'],title:Trials,author:\"The Gardener\",display:{Lore:[\"It glows with a warm light.\"]}}",
+		"permission_level": 4
+	},
+	"entity_action_removed": {
+		"type": "origins:execute_command",
+		"command": "clear @s ",
+		"permission_level": 4
+	},
+	"execute_chosen_when_orb": true,
+	"hidden": true
+}

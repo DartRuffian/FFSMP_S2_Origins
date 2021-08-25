@@ -1,0 +1,33 @@
+{
+  "powers": [
+    "angel:book",
+    "angel:morality",
+    "angel:morality_change",
+    "angel:morality_buffs",
+    "angel:morality_debuffs",
+    "angel:morality_on_kill",
+    "angel:morality_on_hit",
+    "angel:plane_shift",
+    "angel:plane_shift_overworld",
+    "angel:double_jump",
+    "angel:vegetarian",
+    "angel:heaven_regen",
+    "angel:more_damage",
+    "angel:lore",
+    "angel:evil_lore",
+    "angel:evil_book",
+    "angel:less_health",
+    "angel:less_fall_damage",
+    "angel:max_buff_resource",
+    "angel:max_buff",
+    "angel:max_buff_apply",
+    "angel:max_buff_evil",
+    "angel:slow_fall",
+    "angel:triple_jump"
+  ],
+  "icon": "minecraft:nether_star",
+  "order": 10,
+  "impact": 3,
+  "name":"§6§lFallen Angel",
+  "description": "Reclaim Your Ascension, Fallen One"
+}

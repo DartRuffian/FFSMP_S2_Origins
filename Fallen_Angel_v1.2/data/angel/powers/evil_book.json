@@ -1,0 +1,15 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_chosen": {
+		"type": "origins:execute_command",
+		"command": "give @s written_book{pages:['[\"\",{\"text\":\"do not believe the lies, angel\",\"obfuscated\":true,\"color\":\"dark_red\"},{\"text\":\"\\\\n\",\"color\":\"dark_red\"},{\"text\":\"He lies\\\\n\\\\n\\\\nlies\\\\n\\\\nlying\\\\n\\\\n\\\\n\\\\nlies\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}]','{\"text\":\"he\\'ll never accept you back\\\\n\\\\nha\\\\n\\\\nhe lies\\\\n\\\\ni do not\\\\n\\\\ni only offer power\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}','[\"\",{\"text\":\"ignore me if you wish...\\\\nbut then you will be stranded on an unforgiving world, with no friends and no power.\\\\n\\\\nforsake the gardener. i can give you power to defy him...\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"},{\"text\":\"\\\\n \",\"color\":\"reset\"}]','{\"text\":\"just start with one small...kill\\\\n\\\\nthe effects of his curse could be bad, but once you get through them...power unending.\",\"bold\":true,\"italic\":true,\"color\":\"dark_red\"}'],title:Lies,author:\"Error 404: Name Not Found\",display:{Lore:[\"Light seems to bend around it.\"]}}",
+		"permission_level": 4
+	},
+	"entity_action_removed": {
+		"type": "origins:execute_command",
+		"command": "clear @s ",
+		"permission_level": 4
+	},
+	"execute_chosen_when_orb": true,
+	"hidden": true
+}
