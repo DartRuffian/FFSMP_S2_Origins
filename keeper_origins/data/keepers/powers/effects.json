@@ -21,5 +21,8 @@
             },
             "tick_rate": 20
         }
-    }
+    },
+    "hidden": false,
+    "name": "Hyper.",
+    "description": "More speed and jump boost"
 }
