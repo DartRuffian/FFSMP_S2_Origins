@@ -1,7 +1,9 @@
 {
     "name": "Lightweight",
     "description": "Immune to knocback resistance and gain slowness at 25% health.",
-        "type": "active_self",
+    "type": "origins:multiple",
+    "slowness": {
+        "type": "action_over_time",
         "entity_action": {
             "type": "origins:apply_effect",
             "effect": {
@@ -16,5 +18,14 @@
             "type": "origins:relative_health",
             "comparison": "<=",
             "compare_to": 0.25
+    }},
+    "knocback": {
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "-9999 knocback resistance",
+            "attribute": "minecraft:generic.knockback_resistance",
+            "value": -99999,
+            "operation": "addition"
+        }
     }
 }

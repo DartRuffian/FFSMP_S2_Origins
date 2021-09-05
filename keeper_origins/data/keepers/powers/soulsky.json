@@ -24,7 +24,6 @@
             "offset_y": -3,
             "offset_z": 0
         },
-        "cooldown": 20,
         "modifier": {
             "name": "More damage when target 3 blocks above ground.",
             "value": 3,

@@ -9,14 +9,15 @@
             "modifier": "addition"
         },
         "jump": {
-            "type":"active_self",
+            "type":"action_over_time",
             "entity_action": {
                 "type": "origins:apply_effect",
                 "effect": {
                     "effect": "minecraft:jump_boost",
                     "duration": 60,
                     "amplifier": 0,
-                    "show_icon": false
+                    "show_icon": false,
+                    "show_particles": false
                 }
             },
             "tick_rate": 20
