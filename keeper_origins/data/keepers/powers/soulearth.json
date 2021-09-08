@@ -1,0 +1,47 @@
+{
+    "name": "Earthen soul",
+    "description": "Deal 1.75x damage when body is in a block and can phase through a few earthen shards.",
+    "type": "origins:multiple",
+    "phase": {
+    "type": "origins:phasing",
+    "blacklist": false,
+    "render_type": "blindness",
+    "view_distance": 10,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "keepers:phasable"
+    },
+    "phase_down_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "keepers:soulearth_toggle"
+    }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "hidden": true,
+        "key": {
+          "key": "key.origins.primary_active",
+          "continuous": false
+        }
+    },
+    "damage": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "more damage in block",
+            "attribute": "generic.attack_damage",
+            "value": 1.75,
+            "modifier": "multiply_total"
+        }
+    }
+}

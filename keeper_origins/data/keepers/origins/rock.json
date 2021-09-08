@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"keepers:soulearth"
+	],
+	"icon": "minecraft:stone",
+	"order": 10,
+	"impact": 0,
+	"name": "Keeper of the earth",
+	"description": "You keep the rocks man"
+}

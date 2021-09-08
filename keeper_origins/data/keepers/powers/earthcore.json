@@ -1,0 +1,23 @@
+{
+    "name": "Earthy core",
+    "description": "10% armor and 25% health",
+    "type": "origins:multiple",
+    "armor": {
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "10%armor",
+        "attribute": "generic.armor",
+        "value": 0.1,
+        "modifier": "multiply_base"
+    }
+    },
+    "health":{
+        "type": "origins:attribute",
+        "modifier": {
+        "name": "10%armor",
+        "attribute": "generic.max_health",
+        "value": 0.25,
+        "modifier": "multiply_base"
+        }
+    }
+}

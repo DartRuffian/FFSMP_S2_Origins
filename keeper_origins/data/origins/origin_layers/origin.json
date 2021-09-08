@@ -1,6 +1,7 @@
 {
   "replace": true,
   "origins": [
-    "keepers:wind"
+    "keepers:wind",
+    "keepers:rock"
   ]
 }

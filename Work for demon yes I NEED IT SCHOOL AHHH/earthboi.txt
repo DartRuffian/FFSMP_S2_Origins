@@ -1,0 +1,33 @@
+eper of Earth
+
+:green_circle:  Soul of The Earth
+
+Deal 1.75x Damage when your bottom half is inside a block. Can phase through Grass, Dirt, Stone, and Cobblestone. 
+
+:green_circle: Earthy Core
+
+Gain 10% more armor, and 25% more health. 
+
+:green_circle: Heavy Hitter
+
+Every 5 Minutes, press your Secondary to gain Slowness 2, Mining Fatigue 3, and Strength 4 for 1 minute. After that, gain Slowness 4, Mining Fatigue 3, and Blindness 1 for 10 seconds.
+
+:green_circle:  Golem-Like
+
+You are 2.5 blocks tall.
+
+:green_circle:  Sturdy
+
+Take no knockback, and when killed for the first time, shrink to 1 block tall with 3 hearts.
+
+:red_circle: Boulder
+
+When in water or affected by Conduit Power, take 1 heart of true damage a tick. Gain Slowness 1, Blindness 1, Weakness 1, and Water Breathing while you are in water.
+
+:red_circle: Erosion
+
+Takes 2.5x more damage when in water or affected by Conduit Power.
+
+:red_circle: Heavy
+
+Has Gravity 3 permanently.
