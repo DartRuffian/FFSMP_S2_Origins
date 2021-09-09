@@ -1,4 +1,6 @@
 {
+    "name": "The Boulder",
+    "description": "Take 1 true damage per 4 ticks while in water or affected by conduit power also gain weakness 1 slowness 1 and water breathing in water.",
     "type": "origins:multiple",
     "pain": {
         "type": "origins:action_over_time",
@@ -6,10 +8,63 @@
             "type": "origins:damage",
             "amount": 1,
             "source": {
-              "name": "onFire",
+              "name": "magic",
               "magic": true,
               "bypasses_armor": true
             }
+        },
+          "interval": 4,
+          "condition": {
+              "type": "origins:or",
+              "conditions": [
+                  {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0
+          },
+          {
+            "type": "origins:status_effect",
+            "effect": "minecraft:conduit_power",
+            "min_amplifier": 0
           }
+        ]
+        }
+    },
+    "effects": {
+        "type": "action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+            {
+                "effect": "minecraft:slowness",
+                "duration": 20,
+                "amplifier": 0,
+                "show_icon": true,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:weakness",
+                "duration": 20,
+                "amplifier": 0,
+                "show_icon": true,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:water_breathing",
+                "duration": 20,
+                "amplifier": 0,
+                "show_icon": true,
+                "show_particles": false
+            }
+        ]
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0
+        }
     }
 }

@@ -18,7 +18,8 @@
             "type": "origins:relative_health",
             "comparison": "<=",
             "compare_to": 0.25
-    }},
+    }
+},
     "knocback": {
         "type": "origins:attribute",
         "modifier": {

@@ -4,8 +4,10 @@
 		"keepers:heavyhitter",
 		"keepers:size",
 		"keepers:sturdy",
+		"keepers:boulder",
 		"keepers:earthcore",
-		"keepers:erosion"
+		"keepers:erosion",
+		"keepers:heavy"
 	],
 	"icon": "minecraft:stone",
 	"order": 10,
