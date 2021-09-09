@@ -1,0 +1,11 @@
+{
+    "name": "Sturdy",
+    "description": "Take no knockback and on first death shrink to 1 block tall and down to 3 hearts.",
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.knocback_resistance",
+        "value": 0,
+        "operation": "multiply_total"
+    }
+}

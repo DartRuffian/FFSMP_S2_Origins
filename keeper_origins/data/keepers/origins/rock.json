@@ -1,6 +1,11 @@
 {
 	"powers": [
-		"keepers:soulearth"
+		"keepers:soulearth",
+		"keepers:heavyhitter",
+		"keepers:size",
+		"keepers:sturdy",
+		"keepers:earthcore",
+		"keepers:erosion"
 	],
 	"icon": "minecraft:stone",
 	"order": 10,
