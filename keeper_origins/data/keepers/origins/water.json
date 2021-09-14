@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"keepers:",
+	],
+	"icon": "minecraft:lapis_lazuli_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Keeper of the water",
+	"description": "You keep the water man"
+}

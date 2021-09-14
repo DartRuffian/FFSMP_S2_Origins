@@ -1,0 +1,32 @@
+{
+    "type": "origins:multiple",
+    "over_time": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "keepers:water",
+        "change": 1
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    },
+    "active": {
+        "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "keepers:water",
+        "change": 10
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    }
+    }
+}
