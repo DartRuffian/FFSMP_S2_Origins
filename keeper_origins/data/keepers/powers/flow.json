@@ -1,0 +1,73 @@
+{
+    "type": "origins:multiple",
+    "effects": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:night_vision",
+                    "duration": 20,
+                    "amplifier": 2,
+                    "show_particles": false,
+                    "show_icon": false
+                },
+                {
+                    "effect": "minecraft:speed",
+                    "duration": 20,
+                    "amplifier": 2,
+                    "show_particles": false,
+                    "show_icon": false
+                },
+                {
+                    "effect": "minecraft:conduit_power",
+                    "duration": 20,
+                    "amplifier": 0,
+                    "show_particles": false,
+                    "show_icon": false
+                }
+            ]
+        },
+            "interval": 10,
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:fluid_height",
+                        "fluid": "minecraft:water",
+                        "comparison": ">",
+                        "compare_to": 0.0  
+                    },
+                    {
+            "type": "origins:resource",
+            "resource": "keepers:water",
+            "compare_to": 175,
+            "comparison": "<="
+                    }
+                ]
+            }
+    },
+    "fly": {
+      "type": "origins:swimming",
+      "condition": {
+        "type":"origins:and",
+        "conditions": [
+          {
+            "type": "origins:fluid_height",
+              "fluid": "minecraft:water",
+              "comparison": ">",
+              "compare_to": 0.0,
+              "inverted": true
+          },
+          {
+            "type": "origins:resource",
+            "resource": "keepers:water",
+            "compare_to": 175,
+            "comparison": "<="
+          }
+        ]
+      }
+    },
+    "name": "Flow",
+    "description": "Activate Swim Flight, and gain Night Vision, Speed 3, and Conduit Power while Underwater."
+}

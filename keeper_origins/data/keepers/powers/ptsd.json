@@ -1,0 +1,11 @@
+{
+    "name": "PTSD",
+    "description": "You can not use tridents, as your memories of hunters chasing you using tridents causes you to take damage while holding one.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:trident"
+        }
+    }
+}

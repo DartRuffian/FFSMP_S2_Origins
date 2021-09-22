@@ -1,0 +1,17 @@
+{
+    "type": "origins:multiple",
+    "fire": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "name": "2.5fire",
+            "operation": "multiply_base",
+            "value": 2.5
+        }
+    },
+    "pot": {
+        
+    }
+}
