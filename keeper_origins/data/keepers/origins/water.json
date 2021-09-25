@@ -2,7 +2,9 @@
 	"powers": [
 		"keepers:water",
         "keepers:flow",
-        "keepers:recharge"
+        "keepers:recharge",
+		"keepers:ptsd",
+		"keepers:evaporate"
 	],
 	"icon": "minecraft:lapis_lazuli_block",
 	"order": 10,

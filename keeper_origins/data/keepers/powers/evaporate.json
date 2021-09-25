@@ -11,7 +11,10 @@
             "value": 2.5
         }
     },
-    "pot": {
-        
+    "fire resistance immunity": {
+        "type": "origins:effect_immunity",
+        "effect": [
+            "minecraft:fire_resistance"
+        ]
     }
 }
