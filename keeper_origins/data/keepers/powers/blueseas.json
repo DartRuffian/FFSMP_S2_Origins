@@ -1,0 +1,24 @@
+{
+    "name": "Blue seas",
+    "description": "I'm blue dabadeedabadie if I was green I would die",
+    "type": "origins:multiple",
+    "color": {
+        "type": "origins:model_color",
+        "red": 0.5,
+        "green": 0.5,
+        "alpha": 0.7
+    },
+    "poison": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": -0.4
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:poison",
+            "min_amplifier": 0
+        }
+    }
+}

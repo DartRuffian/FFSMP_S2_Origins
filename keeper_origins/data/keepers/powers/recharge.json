@@ -1,6 +1,6 @@
 {
-    "name": "Ocean Orbs",
-    "description": "When out of orbs take 2 damage every tick, regenerate 1 per second in water and water bottle restores 10, lose 1 orb every 10 seconds out of water, when you are in ocean biomes cost 2x and out of water take 1.5x.",
+    "name": "Soul of water",
+    "description": "You regenerate 1 ocean orb per second in water and water bottle restores 10, lose 1 orb every 10 seconds out of water.",
     "type": "origins:multiple",
     "over_time": {
     "type": "origins:action_over_time",
@@ -24,7 +24,7 @@
             "resource": "keepers:water",
             "change": -1
         },
-        "interval": 20,
+        "interval": 200,
         "condition": {
             "type": "origins:fluid_height",
             "fluid": "minecraft:water",

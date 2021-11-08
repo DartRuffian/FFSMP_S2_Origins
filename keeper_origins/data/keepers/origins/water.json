@@ -4,7 +4,8 @@
         "keepers:flow",
         "keepers:recharge",
 		"keepers:ptsd",
-		"keepers:evaporate"
+		"keepers:evaporate",
+		"origins:like_water"
 	],
 	"icon": "minecraft:lapis_lazuli_block",
 	"order": 10,

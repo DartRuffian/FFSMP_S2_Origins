@@ -1,0 +1,14 @@
+{
+    "name": "RagingCurrent",
+    "description": "Deal 1.2x damage to enemies with conduit power.",
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "multiply_total",
+        "value": 1.2
+    },
+    "target_condition": {
+        "type": "origins:status_effect",
+        "effect": "minecraft:conduit_power",
+        "min_amplifier": 0
+    }
+}
