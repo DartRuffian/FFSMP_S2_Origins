@@ -29,15 +29,6 @@
             "compare_to": 100
         },
         {
-            "type": "origins:biome",
-            "condition": {
-            "type": "origins:temperature",
-            "comparison": ">=",
-            "compare_to": 2
-            },
-            "inverted": true
-        },
-        {
             "type": "origins:fluid_height",
             "fluid": "minecraft:water",
             "comparison": ">",

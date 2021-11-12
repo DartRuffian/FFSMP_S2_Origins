@@ -1,4 +1,5 @@
 {
+    "hidden": false,
     "type": "origins:resource",
     "min": 0,
     "max": 750,
