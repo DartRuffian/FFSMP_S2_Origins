@@ -5,7 +5,15 @@
         "keepers:recharge",
 		"keepers:ptsd",
 		"keepers:evaporate",
-		"origins:like_water"
+		"origins:like_water",
+		"keepers:activeabilites",
+		"keepers:onewithwater",
+		"keepers:blueseas",
+		"keepers:open_ocean",
+		"keepers:parched",
+		"keepers:purebody",
+		"keepers:puritan",
+		"keepers:ragingcurrent"
 	],
 	"icon": "minecraft:lapis_lazuli_block",
 	"order": 10,
