@@ -1,0 +1,18 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:levitation",
+            "duration": 60,
+            "amplifier": 0
+        },
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 4
+        },
+        "key": "key.origins.secondary_activate",
+        "continuous": false
+    }
+}

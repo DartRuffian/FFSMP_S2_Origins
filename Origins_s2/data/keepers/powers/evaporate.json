@@ -1,0 +1,22 @@
+{
+    "name": "Evaporate",
+    "description": "Take 2.5x Fire Damage, and can not drink potions of fire resistance.",
+    "type": "origins:multiple",
+    "fire": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "name": "2.5fire",
+            "operation": "multiply_base",
+            "value": 2.5
+        }
+    },
+    "fire resistance immunity": {
+        "type": "origins:effect_immunity",
+        "effect": [
+            "minecraft:fire_resistance"
+        ]
+    }
+}

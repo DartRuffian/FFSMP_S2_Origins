@@ -1,0 +1,34 @@
+{
+    "name": "Soul of the Sky",
+    "description": "You deal double damage when 2 blocks above any blocks and 3x damage when your target is 3 blocks above any blocks.",
+    "hidden": false,
+    "type": "origins:multiple",
+    "self": {
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": -2,
+        "offset_z": 0
+    },
+    "modifier": {
+        "name": "More damage 2 blocks above ground.",
+        "value": 2,
+        "operation": "mulitply_base"
+    },
+    "target": {
+        "type": "origins:modify_damage_dealt",
+        "target_condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": -3,
+            "offset_z": 0
+        },
+        "modifier": {
+            "name": "More damage when target 3 blocks above ground.",
+            "value": 3,
+            "operation": "mulitply_base"
+        }
+    }
+    }
+}

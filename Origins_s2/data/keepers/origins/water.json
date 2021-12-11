@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"keepers:water",
+        "keepers:flow",
+        "keepers:recharge",
+		"keepers:ptsd",
+		"keepers:evaporate",
+		"origins:like_water",
+		"keepers:activeabilites",
+		"keepers:onewithwater",
+		"keepers:blueseas",
+		"keepers:open_ocean",
+		"keepers:parched",
+		"keepers:purebody",
+		"keepers:puritan",
+		"keepers:ragingcurrent"
+	],
+	"icon": "minecraft:lapis_lazuli_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Keeper of the water",
+	"description": "You keep the water man"
+}

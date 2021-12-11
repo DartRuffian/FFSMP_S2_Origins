@@ -1,0 +1,221 @@
+{
+    "name": "Open the Oceans!",
+    "description": "Gains +20% Damage, Speed, and Defense for 45 seconds. While in water, the effects are doubled. OO cost of 100",
+    "type": "origins:multiple",
+    "active": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                "type": "origins:change_resource",
+                "resource": "keepers:water",
+                "change": -100
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "keepers:activeabilites_openoceans",
+                    "change": 1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+            "type": "origins:resource",
+            "resource": "keepers:water",
+            "comparison": ">=",
+            "compare_to": 100
+        },
+        {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0,
+            "inverted": false
+        }
+    ]
+},
+        "cooldown": 20,
+        "key": {
+            "type": "ILJIMAE DO THIS PART"
+            }
+    },
+    "activehot": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                "type": "origins:change_resource",
+                "resource": "keepers:water",
+                "change": -200
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "keepers:activeabilites_openoceans",
+                    "change": 1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+            "type": "origins:resource",
+            "resource": "keepers:water",
+            "comparison": ">=",
+            "compare_to": 200
+        },
+        {
+            "type": "origins:biome",
+            "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+            },
+            "inverted": false
+        },
+        {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0,
+            "inverted": false
+        }
+    ]
+},
+        "cooldown": 20,
+        "key": {
+            "type": "ILJIMAE DO THIS PART"
+            }
+    },
+    "activesurface": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                "type": "origins:change_resource",
+                "resource": "keepers:water",
+                "change": -150
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "keepers:activeabilites_openoceans",
+                    "change": 1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+            "type": "origins:resource",
+            "resource": "keepers:water",
+            "comparison": ">=",
+            "compare_to": 150
+        },
+        {
+            "type": "origins:biome",
+            "condition": {
+            "type": "origins:temperature",
+            "comparison": ">=",
+            "compare_to": 2
+            },
+            "inverted": true
+        },
+        {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0,
+            "inverted": true
+        }
+    ]
+},
+        "cooldown": 20,
+        "key": {
+            "type": "ILJIMAE DO THIS PART"
+            }
+    },
+    "outofwater": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "modifier": "minecraft:generic.attack_damage",
+                "operation": "multiply_total",
+                "value": 0.20
+            },
+            {
+                "modifier": "minecraft:generic.movement_speed",
+                "operation": "multiply_total",
+                "value": 0.20
+            },
+            {
+                "modifier": "minecraft:generic.armor",
+                "operation": "multiply_total",
+                "value": 0.20
+            }
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "keepers:activeabilites_openoceans",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0,
+                    "inverted": true
+                }
+            ]
+        },
+        "tick_rate": 20
+    },
+    "inwater": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "modifier": "minecraft:generic.attack_damage",
+                "operation": "multiply_total",
+                "value": 0.40
+            },
+            {
+                "modifier": "minecraft:generic.movement_speed",
+                "operation": "multiply_total",
+                "value": 0.40
+            },
+            {
+                "modifier": "minecraft:generic.armor",
+                "operation": "multiply_total",
+                "value": 0.40
+            }
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "keepers:activeabilites_openoceans",
+                    "comparison": "==",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0,
+                    "inverted": false
+                }
+            ]
+        },
+        "tick_rate": 20
+    }
+}

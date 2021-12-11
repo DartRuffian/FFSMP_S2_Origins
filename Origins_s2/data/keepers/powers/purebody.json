@@ -1,0 +1,211 @@
+{
+    "name": "Purebody",
+    "description": "Gain +30% Health. When within 20 blocks of Water, gain +120% Health, and can not be affected by negative status effects. (Passively drains 3 OO every tick) (Press ability key to toggle)",
+    "type": "origins:multiple",
+    "pbtoggle": {
+        "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+        "key": "ILJIMAE DO IT DO IT NOWWWwW E"
+    }
+    },
+    "healthalways": {
+        "type": "origins:attribute",
+        "modifier": {
+        "name": "Max health increase",
+        "attribute": "minecraft:generic.max_health",
+        "value": 0.30,
+        "operation": "multiply_total"
+        }
+    },
+    "health": {
+        "type": "origins:conditioned_attribute",
+            "modifier": {
+        "attribute": "minecraft:generic.max_health",
+        "operation": "multiply_base",
+        "value": 1.20
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "keepers:purebody_pbtoggle"
+            },
+            {
+                "type": "origins:block_in_radius",
+        "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+        },
+        "radius": 20
+            },
+            {
+                "type": "origins:resource",
+                "resource": "keepers:water",
+                "comparison": "<=",
+                "compare_to": 1,
+                "inverted": true
+            }
+        ]
+        }
+    },
+    "statuseffect": {
+        "type": "origins:effect_immunity",
+        "effects": [
+        "minecraft:poison",
+        "minecraft:weakness",
+        "minecraft:wither",
+        "minecraft:slowness",
+        "minecraft:nausea",
+        "minecraft:mining_fatigue",
+        "minecraft:levitation",
+        "minecraft:instant_damage",
+        "minecraft:hunger",
+        "minecraft:glowing",
+        "minecraft:blindness",
+        "minecraft:unluck"
+    ],
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "keepers:purebody_pbtoggle"
+            },
+            {
+                "type": "origins:block_in_radius",
+        "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+        },
+        "radius": 20
+            },
+            {
+                "type": "origins:resource",
+                "resource": "keepers:water",
+                "comparison": "<=",
+                "compare_to": 1,
+                "inverted": true
+            }
+        ]
+    }
+    },
+    "cost": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "keepers:water",
+            "change": -1
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "keepers:purebody_pbtoggle"
+            },
+            {
+                "type": "origins:block_in_radius",
+        "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+        },
+        "radius": 20
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+        }
+    },
+    "costhot": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "keepers:water",
+            "change": -2
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "keepers:purebody_pbtoggle"
+            },
+            {
+                "type": "origins:block_in_radius",
+        "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+        },
+        "radius": 20
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2
+                },
+                "inverted": false
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0,
+                "inverted": true
+            }
+        ]
+        }
+    },
+    "costdry": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "keepers:water",
+            "change": -3
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:power_active",
+                "power": "keepers:purebody_pbtoggle"
+            },
+            {
+                "type": "origins:block_in_radius",
+        "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+        },
+        "radius": 20
+            },
+            {
+                "type": "origins:biome",
+                "condition": {
+                "type": "origins:temperature",
+                "comparison": ">=",
+                "compare_to": 2
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0,
+                "inverted": true
+            }
+        ]
+        }
+    }
+}

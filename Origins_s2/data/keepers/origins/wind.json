@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"keepers:rise",
+		"keepers:takeoff",
+		"keepers:dusty",
+		"keepers:light",
+		"keepers:hyperactive",
+		"keepers:wingless",
+		"keepers:frail",
+		"keepers:effects"
+	],
+	"icon": "minecraft:feather",
+	"order": 10,
+	"impact": 0,
+	"name": "Keeper of the wind",
+	"description": "You keep the wind man"
+}

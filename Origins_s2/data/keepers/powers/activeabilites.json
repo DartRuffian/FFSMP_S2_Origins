@@ -1,0 +1,32 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "flow": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "max_action": {
+            "type": "origins:delay",
+            "ticks": 2400,
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "keepers:activeabilites_flow",
+                "change": -1
+            }
+        }
+    },
+    "openoceans": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "max_action": {
+            "type": "origins:delay",
+            "ticks": 900,
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "keepers:activeabilites_openoceans",
+                "change": -1
+            }
+        }
+    }
+}

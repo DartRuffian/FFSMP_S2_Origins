@@ -1,0 +1,29 @@
+{
+    "type": "origins:multiple",
+    "speeed":{
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "speed",
+            "attribute": "generic.movement_speed",
+            "value": 0.05,
+            "modifier": "addition"
+        },
+        "jump": {
+            "type":"action_over_time",
+            "entity_action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:jump_boost",
+                    "duration": 60,
+                    "amplifier": 0,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            },
+            "tick_rate": 20
+        }
+    },
+    "hidden": false,
+    "name": "Avian ascent",
+    "description": "More speed and jump boost"
+}

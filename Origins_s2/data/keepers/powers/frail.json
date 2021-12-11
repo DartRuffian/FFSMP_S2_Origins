@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "health": {
+        "type": "origins:attribute",
+        "modifier": {
+            "name": "-30% hp",
+            "attribute": "minecraft:generic.max_health",
+            "value": 0.30,
+            "operation": "multiply_total",
+            "update_health": true
+        },
+        "damage": {
+            "type": "origins:attribute",
+            "modifier": {
+                "name": "-35% damage",
+                "attribute": "generic.attack_damage",
+                "value": 0.35,
+                "operation": "multiply_total"
+            }
+        }
+    },
+    "hidden": false,
+    "name": "Frail body",
+    "description": "You have 35% less hp and deal 25% less damage."
+}

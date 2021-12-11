@@ -1,0 +1,64 @@
+{
+    "name": "Puritan",
+    "description": "Take 2x damage from all negative potion effects, 3x by undead, 2x from smite and impaling.",
+    "type": "origins:mutiple",
+    "potion": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition" :{
+            "type": "origins:name",
+            "name": "indirectMagic"
+        },
+        "modifier": {
+            "name": "magic double damage",
+            "operation": "multiply_total",
+            "value": 2.0
+        }
+    },
+    "enchants": {
+        "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:smite",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:impaling",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    }
+                ]
+            }
+        }
+    },
+    "modifier": {
+        "name": "enchants damage",
+        "operation": "multiply_total",
+        "value": 2.0
+    }
+    },
+    "undead":{
+        "type": "origins:modify_damage_taken",
+        "damage_condition":{
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:entity_group",
+                "group": "undead"
+            }
+        },
+        "modifier": {
+            "name": "undead damage",
+            "operation": "multiply_base",
+            "value": 3.0
+        }
+    }
+}

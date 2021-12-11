@@ -1,0 +1,11 @@
+{
+    "name": "Heavy",
+    "description": "Permanent gravity 3",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "effect @s ars_nouveau:gravity 20 2",
+        "permission_level": 4
+      },
+      "interval": 20
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Parched",
+    "description": "You require more orbs in hot biomes and out of water and when out of Ocean Orbs you take a heart of damage every second.",
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 2,
+        "source": {
+          "name": "onFire",
+          "bypasses_armor": true
+        }
+      },
+      "interval": 20,
+      "condition": {
+          "type": "origins:resource",
+          "resource": "keepers:water",
+          "comparison": "<=",
+          "compare_to": 0
+      }
+}

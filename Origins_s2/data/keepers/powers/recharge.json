@@ -1,0 +1,50 @@
+{
+    "name": "Soul of water",
+    "description": "You regenerate 1 ocean orb per second in water and water bottle restores 10, lose 1 orb every 10 seconds out of water.",
+    "type": "origins:multiple",
+    "over_time": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "keepers:water",
+        "change": 1
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    },
+    "drain_over_time": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "keepers:water",
+            "change": -1
+        },
+        "interval": 200,
+        "condition": {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:water",
+            "comparison": ">",
+            "compare_to": 0,
+            "inverted": true
+          }
+        },
+    "active": {
+        "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "keepers:water",
+        "change": 10
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:potion"
+        }
+    }
+    }
+}

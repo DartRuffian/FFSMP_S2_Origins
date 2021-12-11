@@ -1,0 +1,26 @@
+{
+    "name": "Erosion",
+    "description": "When in water or affected by conduit powers you take 2.5xmore damage.",
+    "type": "origins:modify_damage_taken",
+    "entity_condtion": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:status_effect",
+                 "effect": "minecraft:conduit_power",
+                 "min_amplifier": 0
+            }
+        ]
+    },
+    "modifier": {
+        "name": "more damage taken when conduit or in water",
+        "operation": "multiply_base",
+        "value": "2.5"
+    }
+}

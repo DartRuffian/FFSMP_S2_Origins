@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"keepers:soulearth",
+		"keepers:togglephase",
+		"keepers:heavyhitter",
+		"keepers:phasepatch",
+		"origins:water_vulnerability",
+		"keepers:earthcore",
+		"keepers:erosion"
+	],
+	"icon": "minecraft:stone",
+	"order": 10,
+	"impact": 0,
+	"name": "Mole",
+	"description": "Phantom but not bad."
+}
