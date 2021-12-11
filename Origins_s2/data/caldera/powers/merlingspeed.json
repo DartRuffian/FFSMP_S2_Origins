@@ -1,0 +1,19 @@
+{
+    "name": "Demon's bond",
+    "description": "You give merlings around you dolphins grace but you lose the ability to have it",
+    "type": "origins:multiple",
+    "speed": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "effect give @a[distance=..9,tag=merling] minecraft:dolphins_grace 10 0 true"
+        },
+        "interval": 5
+    },
+    "immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:dolphins_grace"
+    ]
+    }
+}

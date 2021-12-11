@@ -1,0 +1,20 @@
+{
+    "powers": [
+        "upgraded:deaths_door_up",
+        "upgraded:undying_resource_up",
+        "upgraded:change_undying_resource_up",
+        "upgraded:blue_tint_undying_up",
+        "upgraded:soul_particle_undying_up",
+        "origins:burn_in_daylight",
+        "roubar:undead",
+        "roubar:cursed_armor",
+        "roubar:soul_speed_c2",
+        "upgraded:more_hp_unfazed"
+    ],
+    "icon": "minecraft:soul_lantern",
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Undying",
+    "description": "In search for why your race seems to be forever trapped, slaying the dragon has granted not answers, but has allowed you to grow more comfortable in this prison."
+}

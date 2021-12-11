@@ -1,0 +1,25 @@
+{
+    "powers": [
+        "origins:throw_ender_pearl",
+        "origins:water_vulnerability",
+        "origins:pumpkin_hate",
+        "origins:extra_reach",
+        "origins:ender_particles",
+        "origins:damage_from_potions",
+        "roubar:reset",
+        "roubar:scalereset"
+    ],
+    "icon": {
+        "item": "minecraft:ender_pearl"
+    },
+    "order": 1,
+    "loading_priority": 1,
+    "impact": 2,
+    "name": "Enderian",
+    "description": "Born as sons and daughters of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
+    "upgrades": {
+        "condition": "minecraft:end/kill_dragon",
+        "origin": "upgraded:adapted_enderian",
+        "announcement": "You have evolved... Best check your origin again..."
+    }
+}

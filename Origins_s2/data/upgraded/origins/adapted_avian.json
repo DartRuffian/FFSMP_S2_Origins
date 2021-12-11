@@ -1,0 +1,22 @@
+{
+    "powers": [
+        "origins:slow_falling",
+        "origins:fresh_air",
+        "upgraded:tailwind_up",
+        "origins:lay_eggs",
+        "origins:vegetarian",
+        "upgraded:gain_air",
+        "upgraded:avian_resource",
+        "upgraded:avian_resource_2",
+        "upgraded:change_avian_resource",
+        "upgraded:absolute_velocity"
+    ],
+    "icon": {
+        "item": "minecraft:feather"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Avian",
+    "description": "Wow, what an achievement. You, a flightless bird of all origins, have managed to defeat the Ender Dragon. You feel your ancestor's pride beaming down upon you, evolving you into an Adapted Avian."
+}

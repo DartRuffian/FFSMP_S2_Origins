@@ -1,0 +1,29 @@
+{
+    "powers": [
+        "roubar:deaths_door",
+        "roubar:undying_resource",
+        "roubar:change_undying_resource",
+        "roubar:blue_tint_undying",
+        "roubar:soul_particle_undying",
+        "origins:burn_in_daylight",
+        "roubar:undead",
+        "roubar:cursed_armor",
+        "roubar:soul_speed_c2",
+        "roubar:reset",
+        "roubar:scalereset"
+    ],
+    "icon": {
+        "item": "minecraft:soul_lantern"
+    },
+    "order": 4,
+    "loading_priority": 1,
+    "unchoosable": true,
+    "impact": 2,
+    "name": "Undying",
+    "description": "As creatures of spirit and soul, this race has somehow found itself trapped in these prisons of flesh, unable to escape no matter what you try.",
+    "upgrades": {
+        "condition": "minecraft:end/kill_dragon",
+        "origin": "upgraded:adapted_undying",
+        "announcement": "You have evolved... Best check your origin again..."
+    }
+}

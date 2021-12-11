@@ -1,0 +1,22 @@
+{
+    "type": "origins:stacking_status_effect",
+    "description": "You gain great speed while shrouded in darkness.",
+    "name": "Shadow Riata",
+    "hidden": false,
+    "min_stacks": 0,
+    "max_stacks": 2,
+    "duration_per_stack": 60,
+    "effects": [
+        {
+            "duration": 6,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": true,
+            "effect": "minecraft:speed"
+        }
+    ],
+    "condition": {
+        "type": "origins:exposed_to_sun",
+        "inverted": true
+    }
+}

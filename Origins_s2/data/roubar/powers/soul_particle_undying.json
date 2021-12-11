@@ -1,0 +1,12 @@
+{
+    "hidden": true,
+    "type": "origins:particle",
+    "particle": "minecraft:soul",
+    "frequency": 4,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "roubar:undying_resource",
+        "comparison": "==",
+        "compare_to": 6000
+    }
+}

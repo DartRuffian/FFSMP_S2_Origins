@@ -1,0 +1,23 @@
+{
+    "powers": [
+        "upgraded:explode_jump",
+        "upgraded:martyrdom",
+        "upgraded:blastling_explode",
+        "upgraded:change_blastling_resource",
+        "upgraded:blastling_resource",
+        "upgraded:blastling_ticking",
+        "roubar:camouflage",
+        "upgraded:unstable_frame",
+        "roubar:ailurophobia",
+        "roubar:unworthy",
+        "upgraded:explosive_resurgence",
+        "origins:fall_immunity",
+        "upgraded:falldamagenegate"
+    ],
+    "icon": "minecraft:gunpowder",
+    "unchoosable": true,
+    "order": 12,
+    "impact": 1,
+    "name": "Adapted Blastling",
+    "description": "Taking after the dragon, you have become much more... explosive. You feel ready to blast forth into the world and explore the great lands."
+}

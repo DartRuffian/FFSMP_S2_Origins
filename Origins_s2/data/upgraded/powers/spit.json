@@ -1,0 +1,21 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:trident",
+    "tag": "{life:1200,pickup:0}",
+    "cooldown": 1,
+    "count": 1,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 11
+    },
+    "continuous": true,
+    "speed": 2.75,
+    "sound": "minecraft:entity.llama.spit",
+    "divergence": 3,
+    "name": "Snow Breather",
+    "description": "You are able to spit water",
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": true
+    }
+}

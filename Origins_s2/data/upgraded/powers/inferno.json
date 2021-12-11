@@ -1,0 +1,58 @@
+{
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 7
+    },
+    "cooldown": 100,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @p as @e[distance=..5,type=!player] run particle minecraft:smoke ~ ~1 ~ .4 .4 .4 0 1000 normal"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.0,-0.5,0.0]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.5,0.0,0.0]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[-0.5,0.0,0.0]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.0,0.0,0.5]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.0,0.0,-0.5]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.5,0.0,0.5]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[-0.5,0.0,0.5]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[0.5,0.0,-0.5]}"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:small_fireball ~ ~1 ~ {life:100,pickup:0,Motion:[-0.5,0.0,-0.5]}"
+            }
+        ]
+    },
+    "name": "Dante's Inferno",
+    "description": "Burn brighter than the sun! While on fire you can release eight fireballs that set fire to anything they touch!"
+}

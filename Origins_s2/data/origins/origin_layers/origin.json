@@ -1,6 +1,41 @@
 {
   "replace": false,
+  "order": 0,
+  "enabled": true,
   "origins": [
-    "keepers:rock"
-  ]
+    "keepers:rock",
+    "upgraded:adapted_blastling",
+    "upgraded:adapted_undying",
+    "upgraded:adapted_elytrian",
+    "upgraded:adapted_enderian",
+    "upgraded:adapted_phantom",
+    "upgraded:adapted_avian",
+    "upgraded:adapted_shulk",
+    "upgraded:adapted_blazeborn",
+    "upgraded:adapted_feline",
+    "upgraded:adapted_merling",
+    "upgraded:adapted_arachnid",
+    "roubar:blastling",
+    "roubar:undying",
+    "roubar:avian",
+    "roubar:arachnid",
+    "roubar:blazeborn",
+    "roubar:elytrian",
+    "roubar:enderian",
+    "roubar:feline",
+    "roubar:merling",
+    "roubar:phantom",
+    "roubar:shulk",
+    "origins:human",
+    "upgraded:god",
+    "caldera:demon",
+    "caldera:adapted_demon"
+  ],
+  "missing_name": "Administrator",
+  "missing_description": "you are the adm",
+  "allow_random": true,
+  "exclude_random": [
+      "origins:human"
+  ],
+  "allow_random_unchoosable": false
 }

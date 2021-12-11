@@ -1,0 +1,21 @@
+{
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "addition",
+        "value": 20
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:air"
+            }
+        }
+    },
+    "name": "Rapid Lacerations",
+    "description": "The dragon's rage pours into your claws. While attacking with your bare fists, your attack speed in greatly increased."
+}

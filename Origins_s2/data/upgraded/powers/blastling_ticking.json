@@ -1,0 +1,81 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "shaking": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 3
+        }
+    },
+    "invincible": {
+        "type": "origins:prevent_death",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 3
+        }
+    },
+    "tickeffect": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~ ~ 0.5 0 0.5 0.2 5 normal",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0.2 4 normal",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "permission_level": 4,
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0.2 3 normal"
+                }
+            ]
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 3
+        }
+    },
+    "skincolor": {
+        "type": "origins:model_color",
+        "red": 1,
+        "green": 0.3,
+        "blue": 0.3,
+        "alpha": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 3
+        }
+    },
+    "1hp": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "operation": "addition",
+            "value": -19,
+            "name": "1 Health Point"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 3
+        }
+    }
+}

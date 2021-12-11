@@ -1,0 +1,36 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "effects": [
+        {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    }
+                },
+                {
+                    "type": "origins:entity_group",
+                    "group": "arthropod",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "description": "See cobweb",
+    "name": "Prey on the Weak",
+    "hidden": false
+}

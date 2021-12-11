@@ -1,0 +1,9 @@
+{
+    "type": "origins:exhaust",
+    "interval": 20,
+    "exhaustion": 0.5,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "*:phantomize"
+    }
+}

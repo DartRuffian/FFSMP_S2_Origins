@@ -1,0 +1,10 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "roubar:undying_resource",
+        "change": 6
+    },
+    "interval": 6
+}

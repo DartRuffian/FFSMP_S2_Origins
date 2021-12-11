@@ -1,0 +1,47 @@
+{
+    "name": "Ailurophobia",
+    "description": "Being nearby ocelots and cats gives you extreme paranioa, causing you to gain extreme debuffs.",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 60,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:slowness",
+            "amplifier": 1,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        {
+            "effect": "minecraft:blindness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    ],
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:command",
+                "command": "execute if entity @e[type=cat,distance=..8]",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:command",
+                "command": "execute if entity @e[type=ocelot,distance=..8]",
+                "comparison": ">=",
+                "compare_to": 1
+            }
+        ]
+    }
+}

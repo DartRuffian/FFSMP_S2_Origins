@@ -1,0 +1,32 @@
+{
+    "name": "Poseidon's Tact",
+    "description": "The gods seem to have taken notice of your accomplishments. Now whenever you hit something, a trident strikes down from the heavens.",
+    "type": "origins:multiple",
+    "trident_summon": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:delay",
+            "ticks": 11,
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "/summon minecraft:trident ~ ~8 ~ {life:1200,pickup:0,Motion:[0.0,-2.5,0.0]}",
+                        "permission_level": 4
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "/execute at @s run particle minecraft:bubble_pop ~ ~1 ~ .4 .4 .4 0 1000 normal",
+                        "permission_level": 4
+                    }
+                ]
+            }
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 5
+        }
+    }
+}

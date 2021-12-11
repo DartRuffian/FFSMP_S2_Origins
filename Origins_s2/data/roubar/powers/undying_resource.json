@@ -1,0 +1,19 @@
+{
+    "name": "Death's Door",
+    "description": "The first time you die, you instead come back with more health, as if mocking you for trying to escape this body. ",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 6000,
+    "start_value": 6000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 15,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "roubar:undying_resource",
+            "comparison": "<",
+            "compare_to": 6000
+        }
+    }
+}

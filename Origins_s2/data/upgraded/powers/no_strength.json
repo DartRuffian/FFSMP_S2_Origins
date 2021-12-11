@@ -1,0 +1,8 @@
+{
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:strength"
+    ],
+    "name": "Hollow Muscles",
+    "description": "Strength status effects have no effect on you."
+}

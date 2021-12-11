@@ -1,0 +1,20 @@
+{
+    "type": "origins:multiple",
+    "undead": {
+        "type": "origins:entity_group",
+        "group": "undead"
+    },
+    "hunger": {
+        "type": "origins:modify_exhaustion",
+        "modifier": {
+            "name": "Reduced exhaustion",
+            "operation": "multiply_base",
+            "value": -0.5
+        },
+        "breath": {
+            "type": "origins:water_breathing"
+        }
+    },
+    "name": "Undead",
+    "description": "Harming effects heals you. Healing effects hurt you and smite does damage to you."
+}

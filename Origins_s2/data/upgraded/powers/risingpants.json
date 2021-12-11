@@ -1,0 +1,31 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": "minecraft:resistance",
+        "duration": 40,
+        "amplifier": 0,
+        "show_particles": false
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+        {
+            "type": "origins:equipped_item",
+            "equipment_slot": "legs",
+        "item_condition": {
+            "type": "origins:enchantment",
+            "enchantment": "minecraft:flame",
+            "comparison": "==",
+            "compare_to": 10
+        }
+    },
+    {
+        "type": "origins:power_active",
+        "power": "*:levitate_toggle"
+    }
+        ]
+}
+}

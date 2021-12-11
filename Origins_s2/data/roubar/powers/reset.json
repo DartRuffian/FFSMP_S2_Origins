@@ -1,0 +1,10 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "advancement revoke @s only minecraft:end/kill_dragon",
+        "permission_level": 4
+    },
+    "cooldown": 20,
+    "hidden": true
+}

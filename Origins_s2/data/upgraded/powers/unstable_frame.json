@@ -1,0 +1,29 @@
+{
+    "name": "Unstable Frame",
+    "description": "Your body is mostly comprised of gunpowder, causing you to take double the damage from any explosion.",
+    "type": "origins:multiple",
+    "explosion": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "explosion"
+        },
+        "modifier": {
+            "name": "Weak to explosions",
+            "operation": "multiply_base",
+            "value": 1
+        }
+    },
+    "playerexplosion": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "explosion.player"
+        },
+        "modifier": {
+            "name": "Weak to player made explosions",
+            "operation": "multiply_base",
+            "value": 1
+        }
+    }
+}

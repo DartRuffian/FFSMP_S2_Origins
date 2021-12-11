@@ -1,0 +1,19 @@
+{
+    "name": "Titanic Spirit",
+    "description": "Your soul grew by slaying the dragon, and as a result, overwhelming spirit has been pouring into your body, enhancing it greatly. You are now also unfazed by slowness.",
+    "type": "origins:multiple",
+    "effect_immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:slowness"
+        ]
+    },
+    "more_hp": {
+        "type": "origins:attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.max_health",
+            "value": 20,
+            "operation": "addition"
+        }
+    }
+}

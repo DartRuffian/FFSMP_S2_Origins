@@ -1,0 +1,24 @@
+{
+    "powers": [
+        "origins:water_breathing",
+        "origins:water_vision",
+        "origins:aqua_affinity",
+        "origins:swim_speed",
+        "origins:like_water",
+        "origins:aquatic",
+        "origins:conduit_power_on_land",
+        "origins:air_from_potions",
+        "upgraded:reinforced_scale",
+        "upgraded:trident_summon",
+        "upgraded:neptune_blessing",
+        "upgraded:tag"
+    ],
+    "icon": {
+        "item": "minecraft:cod"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Merling",
+    "description": "The lengths you must've gone to slay the dragon in the waterless void and become an Adapted Merling... Someone seems to have taken notice to your acheivement..."
+}

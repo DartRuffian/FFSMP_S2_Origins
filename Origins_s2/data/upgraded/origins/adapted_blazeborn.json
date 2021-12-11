@@ -1,0 +1,27 @@
+{
+    "powers": [
+        "origins:fire_immunity",
+        "origins:nether_spawn",
+        "origins:burning_wrath",
+        "origins:hotblooded",
+        "origins:water_vulnerability",
+        "origins:flame_particles",
+        "origins:damage_from_snowballs",
+        "origins:damage_from_potions",
+        "origins:slow_falling",
+        "origins:tailwind",
+        "upgraded:inferno",
+        "upgraded:levitation",
+        "upgraded:levitate_toggle",
+        "upgraded:fireball_clear",
+        "upgraded:risingpants"
+    ],
+    "icon": {
+        "item": "minecraft:blaze_powder"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Blazeborn",
+    "description": "Incredible. After slaying that beast, you evolved into an Adapted Blaze. This power, it feels good, it feels reborn, it feels... ablaze."
+}

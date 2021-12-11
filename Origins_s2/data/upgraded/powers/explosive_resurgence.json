@@ -1,0 +1,24 @@
+{
+    "type": "origins:action_on_land",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "/summon minecraft:fireball ~ ~ ~ {life:1200,pickup:0,Motion:[0.0,-2.5,0.0],ExplosionPower:-5}",
+        "permission_level": 4
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:fall_distance",
+                "comparison": ">=",
+                "compare_to": 6
+            },
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Explosive Resurgence",
+    "description": "Upon falling multiple blocks and hitting the ground while not sneaking, you create an explosion similar to you Blast Ball which relaunches you into the sky and knocking away everyone nearby."
+}

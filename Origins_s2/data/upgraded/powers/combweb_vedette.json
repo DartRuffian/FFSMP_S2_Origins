@@ -1,0 +1,30 @@
+{
+    "type": "origins:multiple",
+    "description": "See cobweb",
+    "name": "Master of Webs+",
+    "hidden": false,
+    "sense": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    },
+                    "radius": 10,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:entity_group",
+                    "group": "arthropod",
+                    "inverted": true
+                }
+            ]
+        }
+    }
+}

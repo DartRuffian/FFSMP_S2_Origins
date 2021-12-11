@@ -1,0 +1,19 @@
+{
+    "name": "Death's Door+",
+    "description": "Something in the emptiness of the void has reached out and seemingly determined to prevent you from escaping, granting you even more health upon death.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 6000,
+    "start_value": 6000,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 15,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:undying_resource_up",
+            "comparison": "<",
+            "compare_to": 6000
+        }
+    }
+}

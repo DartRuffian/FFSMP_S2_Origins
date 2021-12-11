@@ -1,0 +1,89 @@
+{
+    "type": "origins:restrict_armor",
+    "head": {
+        "type": "origins:and",
+		"conditions":[{
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:binding_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:vanishing_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 1
+		  }
+		]
+    },
+    "chest": {
+        "type": "origins:and",
+		"conditions":[{
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:binding_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:vanishing_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 3
+		  }
+		]
+    },
+    "legs": {
+        "type": "origins:and",
+		"conditions":[{
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:binding_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:vanishing_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 2
+		  }
+		]
+    },
+    "feet": {
+        "type": "origins:and",
+		"conditions":[{
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:binding_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:enchantment",
+			"enchantment": "minecraft:vanishing_curse",
+			"comparison": "<",
+			"compare_to": 1
+		  },
+		  {
+			"type": "origins:armor_value",
+			"comparison": ">",
+			"compare_to": 1
+		  }
+		]
+	},
+	"name": "Cursed Being",
+	"description": "You can only wear armor with Curse enchantment (except leather armor and gold boots)."
+}

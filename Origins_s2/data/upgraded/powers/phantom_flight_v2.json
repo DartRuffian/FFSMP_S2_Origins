@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "fly": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">",
+                    "compare_to": 0,
+                    "inverted": true
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "origins:phantomize",
+                    "inverted": false
+                }
+            ]
+        }
+    },
+    "name": "Phantom Sail",
+    "description": "Slaying the dragon has granted you the ability of flight while phantomized."
+}

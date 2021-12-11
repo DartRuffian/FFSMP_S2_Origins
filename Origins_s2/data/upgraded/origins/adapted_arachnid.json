@@ -1,0 +1,21 @@
+{
+    "powers": [
+        "origins:climbing",
+        "upgraded:master_of_webs_up",
+        "origins:carnivore",
+        "origins:fragile",
+        "origins:no_cobweb_slowdown",
+        "origins:arthropod",
+        "upgraded:neutral_spider",
+        "upgraded:neutral_cave_spider",
+        "upgraded:summon_cave_spiders"
+    ],
+    "icon": {
+        "item": "minecraft:cobweb"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Arachnid",
+    "description": "You've conquered the End Dimension and stood up for your entire race. Go forth and craft your own domain now."
+}

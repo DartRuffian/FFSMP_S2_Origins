@@ -1,0 +1,25 @@
+{
+    "powers": [
+        "origins:fall_immunity",
+        "origins:sprint_jump",
+        "origins:nine_lives",
+        "origins:weak_arms",
+        "origins:scare_creepers",
+        "origins:cat_vision",
+        "roubar:reset",
+        "roubar:scalereset"
+    ],
+    "icon": {
+        "item": "minecraft:orange_wool"
+    },
+    "order": 0,
+    "loading_priority": 1,
+    "impact": 2,
+    "name": "Feline",
+    "description": "With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet.",
+    "upgrades": {
+        "condition": "minecraft:end/kill_dragon",
+        "origin": "upgraded:adapted_feline",
+        "announcement": "You have evolved... Best check your origin again..."
+    }
+}

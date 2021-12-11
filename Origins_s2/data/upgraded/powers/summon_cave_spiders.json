@@ -1,0 +1,39 @@
+{
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+        "bar_index": 19
+    },
+    "cooldown": 500,
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "execute at @p as @e[distance=..5,type=!player] run particle minecraft:crimson_spore ~ ~1 ~ .4 .4 .4 0 100 normal"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:cave_spider ~ ~ ~"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:cave_spider ~ ~ ~"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:cave_spider ~ ~ ~"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/summon minecraft:cave_spider ~ ~ ~"
+            }
+        ]
+    },
+    "hidden": false,
+    "name": "Broodmother",
+    "description": "All spiders are now passive towards you unless you attack them. You can press your secondary key to summon four cave spiders."
+}

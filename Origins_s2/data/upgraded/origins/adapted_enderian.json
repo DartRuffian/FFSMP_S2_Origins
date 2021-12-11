@@ -1,0 +1,23 @@
+{
+    "powers": [
+        "origins:throw_ender_pearl",
+        "origins:water_vulnerability",
+        "origins:pumpkin_hate",
+        "origins:extra_reach",
+        "origins:ender_particles",
+        "origins:damage_from_potions",
+        "origins:strong_arms_break_speed",
+        "upgraded:arrow_immunity",
+        "upgraded:eyes_of_the_end",
+        "upgraded:entity_glow",
+        "upgraded:glowtoggle"
+    ],
+    "icon": {
+        "item": "minecraft:ender_pearl"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Enderian",
+    "description": "After slaying the Ender Dragon, the remorse of slaying your own origin rushes over you like a tidal wave, transforming you into an Adapted Enderian."
+}

@@ -1,0 +1,36 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "/clear @s minecraft:totem_of_undying",
+        "permission_level": 4
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:totem_of_undying"
+                    }
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:totem_of_undying"
+                    }
+                }
+            }
+        ]
+    },
+    "name": "Unworthy",
+    "description": "Holding a totem of undying will cause it to vanish of this plane of existence completely."
+}

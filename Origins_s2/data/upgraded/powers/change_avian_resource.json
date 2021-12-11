@@ -1,0 +1,33 @@
+{
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:sprinting"
+        },
+        "if_action": {
+            "type": "origins:change_resource",
+            "resource": "upgraded:avian_resource",
+            "change": 2,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "upgraded:avian_resource",
+                "comparison": "<",
+                "compare_to": 160
+            }
+        },
+        "else_action": {
+            "type": "origins:change_resource",
+            "resource": "upgraded:avian_resource",
+            "change": -6,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "upgraded:avian_resource",
+                "comparison": "<",
+                "compare_to": 160
+            }
+        }
+    },
+    "interval": 2
+}

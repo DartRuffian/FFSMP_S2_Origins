@@ -1,0 +1,22 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 128,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:weakness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true,
+            "amplifier": 1
+        }
+    ],
+    "condition": {
+        "type": "origins:power_active",
+        "power": "origins:phantomize",
+        "inverted": false
+    },
+    "name": "Required Focus",
+    "description": "Phantomizing takes up alot of your energy, causing your attacks to be weaker while phantomized and increase in duration the longer you stay phantomized."
+}

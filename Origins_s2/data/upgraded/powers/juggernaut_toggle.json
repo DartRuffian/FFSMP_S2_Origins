@@ -1,0 +1,11 @@
+{
+    "type": "origins:toggle",
+    "name": "Fortified Juggernaut",
+    "hidden": false,
+    "description": "Offense shall pale in comparison to your defense! Retreat into your shell to gain a large amount of resistance in exchange for vision and movement.",
+    "key": {
+        "continuous": false,
+        "key": "secondary"
+    },
+    "active_by_default": true
+}

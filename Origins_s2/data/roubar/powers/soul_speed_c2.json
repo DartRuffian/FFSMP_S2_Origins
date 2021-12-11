@@ -1,0 +1,18 @@
+{
+    "name": "Soul Walker",
+    "description": "Soul sand seems to have less an effect on you than others.",
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "addition",
+        "value": 0.05
+    },
+    "tick_rate": 20,
+    "condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:soul_speed_blocks"
+        }
+    }
+}

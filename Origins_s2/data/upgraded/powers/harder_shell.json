@@ -1,0 +1,11 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "name": "Natural Armor health bonus",
+        "attribute": "minecraft:generic.armor",
+        "value": 14,
+        "operation": "addition"
+    },
+    "name": "Natural Armor+",
+    "description": "Your natural armor provides you with even more armor now."
+}

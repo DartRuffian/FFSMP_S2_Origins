@@ -1,0 +1,9 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "arrow"
+    },
+    "name": "Arrow Invulnerability",
+    "description": "Ancient abilities of the end seep into your mind, granting you complete invulnerability to arrows."
+}

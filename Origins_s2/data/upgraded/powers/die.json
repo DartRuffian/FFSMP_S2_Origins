@@ -1,0 +1,18 @@
+{
+    "name": "Die",
+    "description": "Kill them all yes yes yes.",
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:wither_skull",
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 20
+    },
+    "count": 1,
+    "speed": 1.5,
+    "divergence": 1,
+    "sound": "minecraft:entity.wither.shoot",
+    "tag": "{pickup:0b}",
+    "key": "primary"
+}

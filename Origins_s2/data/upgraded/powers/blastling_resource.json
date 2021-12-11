@@ -1,0 +1,19 @@
+{
+    "name": "Martyrdom",
+    "description": "Upon taking fatal damage, you turn into a walking bomb that will explode within a few seconds.",
+    "type": "origins:resource",
+    "min": 0,
+    "max": 160,
+    "start_value": 0,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 6,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:blastling_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}

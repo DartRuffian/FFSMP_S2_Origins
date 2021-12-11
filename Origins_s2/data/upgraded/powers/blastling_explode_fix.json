@@ -1,0 +1,10 @@
+{
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:and",
+        "name": "explosion"
+    },
+    "name": "fireball Invulnerability",
+    "description": "blablabal",
+    "hidden": true
+}

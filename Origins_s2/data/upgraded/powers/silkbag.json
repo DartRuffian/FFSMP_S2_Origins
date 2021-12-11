@@ -1,0 +1,10 @@
+{
+    "type": "origins:inventory",
+    "name": "Silkbag",
+    "description": "Bag mede out of silk",
+    "drop_on_death": false,
+    "key": {
+        "key": "key.origins.primary_active",
+        "continuous": false
+    }
+}

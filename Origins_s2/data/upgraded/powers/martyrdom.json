@@ -1,0 +1,54 @@
+{
+    "hidden": true,
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:clear_effect"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "effect": "minecraft:speed",
+                        "amplifier": 1,
+                        "duration": 160,
+                        "show_particles": false,
+                        "show_icon": false
+                    },
+                    {
+                        "effect": "minecraft:weakness",
+                        "amplifier": 9,
+                        "duration": 160,
+                        "show_particles": false,
+                        "show_icon": false
+                    }
+                ]
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 3,
+                "action": {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:instant_damamge",
+                        "amplifier": 99,
+                        "show particles": false
+                    }
+                }
+            },
+            {
+                "type": "origins:change_resource",
+                "resource": "upgraded:blastling_resource",
+                "change": 160
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:resource",
+        "resource": "upgraded:blastling_resource",
+        "comparison": "==",
+        "compare_to": 0
+    }
+}

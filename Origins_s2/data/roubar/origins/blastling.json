@@ -1,0 +1,29 @@
+{
+    "powers": [
+        "upgraded:explode_jump",
+        "upgraded:martyrdom",
+        "upgraded:blastling_explode",
+        "upgraded:change_blastling_resource",
+        "upgraded:blastling_resource",
+        "upgraded:blastling_ticking",
+        "roubar:camouflage",
+        "upgraded:unstable_frame",
+        "roubar:ailurophobia",
+        "roubar:unworthy",
+        "roubar:reset",
+        "roubar:scalereset"
+    ],
+    "icon": {
+        "item": "minecraft:gunpowder"
+    },
+    "order": 5,
+    "impact": 1,
+    "unchoosable": true,
+    "name": "Blastling",
+    "description": "The first born from the chaos of the the world, Blastlings are a rare sight to behold. Their explosive natures serve as both a positive and negative for them...",
+    "upgrades": {
+        "condition": "minecraft:end/kill_dragon",
+        "origin": "upgraded:adapted_blastling",
+        "announcement": "You have evolved... Best check your origin again..."
+    }
+}

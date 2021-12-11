@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "name": "Cobweb Shot",
+    "description": "You have the ability to launch large burts of silk at your foes, allowing you to ensnare groups temporarily.",
+    "shot": {
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:armor_stand",
+        "cooldown": 400,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 3
+        },
+        "tag": "{Invisible:1b,Invulnerable:1b,Small:1b,Tags:[\"webbomb\"]}",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        }
+    },
+    "hiss": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:entity.spider.ambient master @s",
+            "permission_level": 4
+        },
+        "cooldown": 5,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "cobweb": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] run particle spit ~ ~ ~ .1 .1 .1 0 3",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] unless block ~ ~-.2 ~ air run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 cobweb replace air",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] unless block ~ ~-.2 ~ air run playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] unless block ~ ~-.2 ~ air run summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Invulnerable:1b,Small:1b,Tags:[\"timer\"]}",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] unless block ~ ~-.2 ~ air run particle minecraft:effect ~ ~ ~ 1.2 1.2 1.2 0 150 force",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute at @e[type=armor_stand, tag=webbomb] as @e[type=armor_stand, tag=webbomb] unless block ~ ~-.2 ~ air run kill @s",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "/scoreboard players add @e[type=armor_stand,tag=timer] spidertimer 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[type=armor_stand,tag=timer,scores={spidertimer=100..100}] at @e[type=armor_stand,tag=timer,scores={spidertimer=..100}] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air replace cobweb",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[type=armor_stand,tag=timer,scores={spidertimer=100..100}] at @e[type=armor_stand,tag=timer,scores={spidertimer=..100}] run playsound minecraft:block.composter.empty master @a",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[type=armor_stand,tag=timer,scores={spidertimer=100..100}] at @e[type=armor_stand,tag=timer,scores={spidertimer=..100}] run particle minecraft:effect ~ ~ ~ 1.2 1.2 1.2 0 150 force",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[type=armor_stand, tag=timer,scores={spidertimer=100..100}] run kill @s",
+                    "permission_level": 4
+                }
+            ]
+        }
+    }
+}

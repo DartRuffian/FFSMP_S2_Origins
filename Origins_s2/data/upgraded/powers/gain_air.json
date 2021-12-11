@@ -1,0 +1,21 @@
+{
+    "type": "origins:launch",
+    "speed": 1.1,
+    "cooldown": 200,
+    "key": "primary",
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 16
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:air",
+            "inverted": true
+        }
+    },
+    "name": "Leap of Faith",
+    "description": "Maybe you can fly now so you try as hard as you can... nope... still can't... At least you're making progress!"
+}

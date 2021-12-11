@@ -1,0 +1,23 @@
+{
+    "type": "origins:active_self",
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/resource_bar.png",
+        "bar_index": 7,
+        "should_render": false
+    },
+    "cooldown": 100,
+    "entity_action": {
+        "type": "origins:delay",
+        "ticks": 30,
+        "action": {
+            "type": "origins:execute_command",
+            "command": "kill @e[type= minecraft:small_fireball]"
+        }
+    },
+    "hidden": true,
+    "name": "Dante's Inferno",
+    "description": "Burn brighter than the sun! While on fire you can release a fiery nova that sets everything near you on fire."
+}

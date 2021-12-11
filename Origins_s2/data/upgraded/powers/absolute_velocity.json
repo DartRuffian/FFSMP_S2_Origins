@@ -1,0 +1,114 @@
+{
+    "name": "Absloute Velocity",
+    "description": "As you sprint, your velocity bar increases. The higher the velocity bar the more movement speed you gain. At maximum movement speed, you take no knockback and will knock up anyone that damages you. Velocity will rapidly decrease while not sprinting.",
+    "type": "origins:multiple",
+    "speed1": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.01,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": ">=",
+            "compare_to": 32
+        }
+    },
+    "speed2": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.01,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": ">=",
+            "compare_to": 64
+        }
+    },
+    "speed3": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.02,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": ">=",
+            "compare_to": 96
+        }
+    },
+    "speed4": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.02,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": ">=",
+            "compare_to": 128
+        }
+    },
+    "speed5": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.03,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": ">=",
+            "compare_to": 155
+        }
+    },
+    "noknockback": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.knockback_resistance",
+            "value": 1.0,
+            "operation": "addition"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": "==",
+            "compare_to": 160
+        }
+    },
+    "launch": {
+        "type": "origins:attacker_action_when_hit",
+        "entity_action": {
+          "type": "origins:add_velocity",
+          "y": 0.7
+        },
+        "cooldown": 0,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": "==",
+            "compare_to": 160
+        }
+    },
+    "particles": {
+        "type": "origins:particle",
+        "particle": "minecraft:smoke",
+        "frequency": 10,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "upgraded:avian_resource",
+            "comparison": "==",
+            "compare_to": 160
+        }
+    }
+}

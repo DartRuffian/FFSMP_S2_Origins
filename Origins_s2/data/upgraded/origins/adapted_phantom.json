@@ -1,0 +1,21 @@
+{
+    "powers": [
+        "origins:phantomize",
+        "origins:translucent",
+        "origins:phasing",
+        "origins:invisibility",
+        "origins:burn_in_daylight",
+        "origins:fragile",
+        "upgraded:no_strength",
+        "upgraded:stacking_effect_positive",
+        "upgraded:phantom_flight_v2"
+    ],
+    "icon": {
+        "item": "minecraft:phantom_membrane"
+    },
+    "unchoosable": true,
+    "order": 11,
+    "impact": 1,
+    "name": "Adapted Phantom",
+    "description": "You've slain the terror of the skies! You feel stronger as the darkness enshrouds you..."
+}

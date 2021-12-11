@@ -1,0 +1,52 @@
+{
+	"type": "origins:multiple",
+	"disable_food_regen": {
+		"type": "origins:disable_regen",
+		"condition": {
+			"type": "origins:exposed_to_sun"
+		}
+	},
+	"disable_insta_health": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:instant_health",
+		"condition": {
+			"type": "origins:exposed_to_sun"
+		}
+	},	
+	"withering": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [{
+        "type": "origins:apply_effect",
+        "effects": 
+            [{
+				"effect": "minecraft:weakness",
+                "duration": 20,
+				"amplifier": 9,
+				"is_ambient": true,
+                "show_particles": false,
+                "show_icon" : false
+			},
+			{
+                "effect": "minecraft:hunger",
+                "duration": 20,
+				"amplifier": 9,
+				"is_ambient": true,
+                "show_particles": false,
+                "show_icon" : false
+		}]
+		},
+		{
+			"type": "origins:clear_effect",
+			"effect": "minecraft:regeneration"
+		}]
+		},
+    "interval": 10,
+    "condition": {
+        "type": "origins:exposed_to_sun"
+	  }
+	},
+  "name":"Extreme Heliophobia",
+  "description":"As a demon, you'll weaken and wither, on top of that, any form of healing will be disabled from being exposed to sun."
+}

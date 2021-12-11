@@ -1,0 +1,11 @@
+{
+    "type": "origins:toggle",
+    "name": "Ascent",
+    "hidden": false,
+    "description": "You can fly! Sort of... Use your primary to ascend!",
+    "key": {
+        "continuous": false,
+        "key": "primary"
+    },
+    "active_by_default": false
+}

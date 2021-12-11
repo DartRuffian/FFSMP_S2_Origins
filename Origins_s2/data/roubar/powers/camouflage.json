@@ -1,0 +1,26 @@
+{
+    "name": "Camouflage",
+    "description": "While at full health (20 health points), you are able to go invisible while sneaking on grass.",
+    "type": "origins:invisibility",
+    "render_armor": true,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:on_block",
+                "block_condition": {
+                    "type": "origins:block",
+                    "block": "minecraft:grass_block"
+                }
+            },
+            {
+                "type": "origins:sneaking"
+            },
+            {
+                "type": "origins:health",
+                "comparison": ">=",
+                "compare_to": 20
+            }
+        ]
+    }
+}
